@@ -376,7 +376,7 @@
 // let btn = document.querySelector('.inp');
 // btn.addEventListener('click', func);
 // function func() {
-    //this.value = this.value % 10;
+//this.value = this.value % 10;
 //     if(this.value>=10){
 //         this.removeEventListener('click', func);
 //     }else{
@@ -523,7 +523,6 @@
 // for(let i = 0; i<pars.length; i++){
 //     pars[i].setAttribute('data-num', i);
 // }
-
 
 
 // let butt = document.querySelector('#elem');
@@ -717,3 +716,10 @@
 //         l.removeEventListener('click', func);
 //     }
 // }
+//Удаление элементов
+// let parent = document.getElementById('parent');
+// let elem = document.getElementById('elem');
+// let btn = document.querySelector('button');
+// btn.addEventListener('click', function () {
+//     parent.removeChild(elem);
+// })
