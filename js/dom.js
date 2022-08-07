@@ -790,4 +790,60 @@
 //         elem.parentElement.removeChild(elem);
 //     })
 // }
+
 // Создание и вставка элементов.
+// Метод append(вставка в конце елемента)
+
+// let parent = document.querySelector('#parent');
+// let p = document.createElement('p');
+// p.innerHTML = 'Добаваленный элемент';
+// parent.append(p);
+// let parent = document.querySelector('#parent');
+// let d = document.createElement('div');
+// d.innerHTML = 'Добаваленный элемент';
+// let p2 = document.createElement('p');
+// p2.innerHTML = '!';
+// parent.append(d, p2);
+// let parent = document.querySelector('#parent');
+// parent.append('Любая строка');
+// let parent = document.querySelector('#parent');
+// for (let i = 1; i <= 9; i++) {
+//     let li = document.createElement('li');
+//     li.innerHTML = i;
+//     parent.append(li);
+// }
+// let tab = document.querySelector('#tab');
+// for (let r = 0; r <= 3; r++) {
+//     let tr = document.createElement('tr');
+//     for (let d = 0; d <= 4; d++) {
+//         let td = document.createElement('td');
+//         td.innerHTML = 'Это ячейки';
+//         tr.append(td);
+//     }
+//     tab.append(tr);
+// }
+// Метод prepend
+// let par = document.querySelector('#parent');
+// let p = document.createElement('p');
+// p.innerHTML = 'Какое то слово';
+// par.prepend(p);
+// let par = document.querySelector('#parent');
+// let p1 = document.createElement('p');
+// p1.innerHTML = 'Какое то слово';
+// let p2 = document.createElement('p');
+// p2.innerHTML = 'Какое то слово';
+// par.prepend(p1, p2);
+// let par = document.querySelector('#parent');
+// par.prepend('Какая то строка');
+// let wer = document.querySelector('#wer');
+// let start = document.createElement('li');
+// let stop = document.createElement('li');
+// start.innerHTML = 'Stert';
+// stop.innerHTML = "Stop";
+// wer.prepend(start);
+// wer.append(stop);
+// Метод insertBefore
+// let rod = document.querySelector('#rod');
+// let par = document.createElement('p');
+// par.innerHTML = 'Наполнение';
+// rod.insertBefore(par, rod.firstElementChild);
