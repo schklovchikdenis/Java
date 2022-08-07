@@ -723,3 +723,71 @@
 // btn.addEventListener('click', function () {
 //     parent.removeChild(elem);
 // })
+
+// let parent = document.getElementById('parent');
+// let item = document.querySelectorAll('li');
+// let btn = document.querySelector('button');
+// console.log(item);
+// btn.addEventListener('click', function () {
+//     console.log(parent.lastElementChild);
+//     // parent.removeChild(parent.lastElementChild);
+// })
+//parent.Element
+// let elem = document.getElementById('elem');
+// elem.addEventListener('click', function () {
+//     this.parentElement.removeChild(elem);
+// })
+//Remove
+// let elem = document.getElementById('elem');
+// elem.addEventListener('click', function () {
+//     this.remove();
+// })
+//Самоудаление элементов на JavaScript
+// let parent = document.querySelector('#parent');
+// let lists = document.querySelectorAll('#parent li');
+// for (let list of lists) {
+//     list.addEventListener('click', function () {
+//         parent.removeChild(this);
+//     })
+// }
+
+//Самоудаление новых элементов на JavaScript
+// let parent = document.getElementById('parent');
+// let lists = document.querySelectorAll('#parent li');
+// let sbt = document.getElementById('button');
+// sbt.addEventListener('click', function () {
+//     let r = document.createElement('li')
+//     parent.appendChild(r);
+//     r.addEventListener('click', function () {
+//         parent.removeChild(this);
+//     })
+//     for (let list of lists) {
+//         list.addEventListener('click', function () {
+//             this.remove();
+//         })
+//     }
+// })
+//Создание ссылок для удаление элементов на JavaScript
+// let elems = document.querySelectorAll('#parent li');
+// for (let elem of elems) {
+//     let remove = document.createElement('a');
+//     remove.href = '';
+//     remove.innerHTML = 'Remove';
+//     elem.appendChild(remove);
+//     remove.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         elem.parentElement.removeChild(elem);
+//     })
+// }
+// let elems = document.querySelectorAll('table tr');
+// for (let elem of elems) {
+//     let rem = document.createElement('a');
+//     rem.href = '';
+//     rem.innerHTML = 'Удалить строку';
+//     elem.appendChild(rem);
+//     rem.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         elem.parentElement.removeChild(elem);
+//     })
+// }
+// Создание и вставка элементов.
