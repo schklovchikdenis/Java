@@ -835,6 +835,7 @@
 // par.prepend(p1, p2);
 // let par = document.querySelector('#parent');
 // par.prepend('Какая то строка');
+
 // let wer = document.querySelector('#wer');
 // let start = document.createElement('li');
 // let stop = document.createElement('li');
@@ -847,3 +848,47 @@
 // let par = document.createElement('p');
 // par.innerHTML = 'Наполнение';
 // rod.insertBefore(par, rod.firstElementChild);
+
+// let par = document.querySelector('#parent');
+// let elem = document.querySelector('#elem');
+// let li = document.createElement('li');
+// li.innerHTML = 'new';
+// par.insertBefore(li, elem);
+// li.addEventListener('click', function () {
+//     li.innerHTML = li.innerHTML + ' ' + '!';
+// })
+//Кнопки для скрытия и показа элемента на JavaScript
+// let elem = document.querySelector('#elem');
+// let show = document.querySelector('#show');
+// let hide = document.querySelector('#hide');
+// show.addEventListener('click', function () {
+//     elem.classList.remove('hide');
+// })
+// hide.addEventListener('click', function () {
+//     elem.classList.add('hide');
+// })
+// Много элементов с кнопками показа на JavaScript
+//1 Через атрибут data
+// let butts = document.querySelectorAll('button');
+// for (let butt of butts) {
+//     butt.addEventListener('click', function () {
+//         let elem = document.querySelector('#' + this.dataset.elem);
+//         elem.classList.toggle('hide');
+//     })
+// }
+//2 Через перебор и привязку к порядковым номерам
+// let but = document.querySelectorAll('button');
+// let par = document.querySelectorAll('p');
+// for (let i = 0; i <= but.length; i++) {
+//     but[i].addEventListener('click', function () {
+//         par[i].classList.toggle('hide');
+//     })
+// }
+//3 Через перебор и привязку как соседа слева
+// let buts = document.querySelectorAll('button');
+// let par = document.querySelectorAll('p');
+// for (let but of buts) {
+//     but.addEventListener('click', function () {
+//         this.previousElementSibling.classList.toggle('hide');
+//     })
+// }
